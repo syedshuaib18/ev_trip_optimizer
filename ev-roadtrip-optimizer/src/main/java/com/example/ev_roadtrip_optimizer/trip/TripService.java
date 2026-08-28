@@ -29,6 +29,10 @@ public class TripService {
         existing.setVehicleId(trip.getVehicleId());
         existing.setOrigin(trip.getOrigin());
         existing.setDestination(trip.getDestination());
+        existing.setOriginLatitude(trip.getOriginLatitude());
+        existing.setOriginLongitude(trip.getOriginLongitude());
+        existing.setDestinationLatitude(trip.getDestinationLatitude());
+        existing.setDestinationLongitude(trip.getDestinationLongitude());
         return tripRepository.save(existing);
     }
     public void deleteTrip(Long id) {

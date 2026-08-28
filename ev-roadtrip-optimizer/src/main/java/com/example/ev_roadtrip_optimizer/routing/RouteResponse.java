@@ -1,0 +1,17 @@
+package com.example.ev_roadtrip_optimizer.routing;
+
+public class RouteResponse {
+    private double distanceKm;
+    private  double durationMinutes;
+
+    public RouteResponse(double distanceKm, double durationMinutes){
+        this.distanceKm=distanceKm;
+        this.durationMinutes=durationMinutes;
+    }
+    public double getDistanceKm() {
+        return distanceKm;
+    }
+    public double getDurationMinutes(){
+        return durationMinutes;
+    }
+}
