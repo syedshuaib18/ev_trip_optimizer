@@ -8,8 +8,13 @@ public class ChargingStationResponse {
     private String chargerType;
     private Double chargingSpeedKw;
 
-    public ChargingStationResponse(String name, double latitude, double longitude,
-                                   String chargerType, Double chargingSpeedKw) {
+    public ChargingStationResponse(
+            String name,
+            double latitude,
+            double longitude,
+            String chargerType,
+            Double chargingSpeedKw) {
+
         this.name = name;
         this.latitude = latitude;
         this.longitude = longitude;
